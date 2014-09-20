@@ -1,9 +1,9 @@
 IR Data Sets within docker volume
 =================================
 
-In order to provide reproducibility of IR experiments you can run it within 
-containers. Now this Data Volume includes following raw datasets: `LISA`,
-`NPL`, `CACM`, `CISI`, `Cranfield`, `Time`, `Medline`, `Adi`.
+In order to provide reproducibility of IR experiments you can run it docker
+within containers. Now this Data Volume includes following raw datasets:
+`LISA`, `NPL`, `CACM`, `CISI`, `Cranfield`, `Time`, `Medline`, `Adi`.
 
 All DataSets pulled from
 [ir.dcs.gla.ac.uk](http://ir.dcs.gla.ac.uk/resources/test_collections)
@@ -12,13 +12,15 @@ All datasets located in `/usr/data/` in separate folders.
 
 As a base image used `ubuntu:10.04` because it is smallest available.
 
-Container size is about `210 MB`. `ubuntu:10.04` is about `183 MB`.
+Result container size is about `210 MB`, `ubuntu:10.04` is about `183 MB`.
 
 Usage
 =====
 
 Build is simple as:
 
+    git clone https://github.com/krasnobaev/docker-irdatasets.git
+    cd docker-irdatasets
     docker build -t krasnobaev/irdatasets .
 
 Or, instead you can pull latest automatically builded image from
