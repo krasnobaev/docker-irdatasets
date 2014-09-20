@@ -2,7 +2,10 @@ IR Data Sets within docker volume
 =================================
 
 In order to provide reproducibility of IR experiments you can run it within
-docker containers. Now this Data Volume includes following raw datasets:
+docker containers. This repository provides some data sets within single
+container which you can attach to your own containers.
+
+Now, this image includes following raw datasets:
 `LISA`, `NPL`, `CACM`, `CISI`, `Cranfield`, `Time`, `Medline`, `Adi`.
 
 All DataSets pulled from

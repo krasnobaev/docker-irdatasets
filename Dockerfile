@@ -1,5 +1,5 @@
 FROM ubuntu:10.04
-MAINTAINER Aleksey Krasnobaev <alekseykrasnobaev@gmail.com>
+MAINTAINER Aleksey Krasnobaev <https://github.com/krasnobaev>
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install wget
 
