@@ -8,7 +8,7 @@ containers. Now this Data Volume includes following raw datasets: `LISA`,
 All DataSets pulled from
 [ir.dcs.gla.ac.uk](http://ir.dcs.gla.ac.uk/resources/test_collections)
 
-All datasets located in `/usr/data` in separate folders.
+All datasets located in `/usr/data/` in separate folders.
 
 As a base image used `ubuntu:10.04` because it is smallest available.
 
@@ -29,9 +29,9 @@ Or, instead you can pull latest automatically builded image from
 Now you should start container as a Data Volume Container:
 
     docker run -d -v /usr/data --name irds -t krasnobaev/irdatasets \
-    echo DataSets for IR experiments`
+    echo DataSets for IR experiments
 
-After that, attach this volume to your application:
+After that, attach volume to your application:
 
     docker run -i --volumes-from irds -t ubuntu ls -l /usr/data/
 
